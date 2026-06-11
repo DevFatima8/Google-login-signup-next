@@ -2,10 +2,7 @@ import { NextResponse } from "next/server";
 import { getIronSession } from "iron-session";
 import { sessionOptions } from "./lib/auth";
 
-// Function name changed from 'middleware' to 'proxy'
-export async function proxy(request) {
-  console.log("Proxy running for:", request.nextUrl.pathname);
-  
+export async function proxy(request) {  // Changed from 'middleware' to 'proxy'
   try {
     const cookieHeader = request.cookies.get(sessionOptions.cookieName);
     const { pathname } = request.nextUrl;

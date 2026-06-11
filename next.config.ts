@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  images: {
+    domains: [
+      'lh3.googleusercontent.com',
+      'platform-lookaside.fbsbx.com',
+      'graph.facebook.com',
+    ],
+  },
 };
 
 export default nextConfig;
