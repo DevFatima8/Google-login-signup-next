@@ -1,7 +1,7 @@
 
 const nextConfig = {
   images: {
-    domains: [
+    remotePatterns: [
       'lh3.googleusercontent.com',
       'platform-lookaside.fbsbx.com',
       'graph.facebook.com',
